@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>CargocontainersTP</title>   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+    </head>
+  
+  </head>
+  <body>
+
+    <section>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">CargocontainersTP</div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+    
+    
+            <li class="services">
+              <a href="/">About</a>
+    
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Process.html">Process</a></li>
+                
+              </ul>
+    
+            </li>
+    
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+          </div>
+        </ul>
+      </nav>
+    
+    </section>
+
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="pic\7.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="pic\3.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+    </div>
+    <script>
+      let slideIndex = 0;
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      
+      showSlides();
+      function currentSlide(index) {
+           slideIndex = index;
+           showSlides();
+      }
+     function plusSlides(step) {
+        
+        if(step < 0) {
+            slideIndex -= 2;
+            
+            if(slideIndex < 0) {
+              slideIndex = slides.length - 1;
+            }
+        }
+        
+        showSlides();
+     }
+      function showSlides() {
+        for(let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+         if(timeoutId) {
+            clearTimeout(timeoutId);
+         }
+        timeoutId = setTimeout(showSlides, 6000); // Change image every 5 seconds
+      }
+    </script>
+<section>
+<div style="width: 100%;
+  height: 50px;
+  text-align: center;">
+
+</div> 
+<div style="   margin: auto;
+  width: 90%;">
+<hr class="rounded"><br><br>
+<b style="font-size:30px">Modern. Beautiful. Modular. CargocontainersTP.</b><br>
+<b style="font-size:22px">At CargocontainersTP this isn’t just a catch phrase, it defines everything we do.</b>
+<br><br>
+   <b><p style="font-size:20px">MODERN:</b>-Modern design is an all encompassing philosophy which we define in three main categories.</p>
+  <p style="font-size:20px">Authenticity of materials - At CargocontainersTP we let materials be what they are, not try to look like something else. In the  C-series the shipping container which is both part of the structure  as well as the exterior cladding material. The cedar ceiling is real cedar, and the steel accent panel is a piece of steel that we allow to weather naturally. In a CargocontainersTP what you see is what you get.</p><br>
+     <p style="font-size:20px">Indoor Outdoor Connection - A CargocontainersTP has a lot of glass. The indoor outdoor experience is a defining feature of our design and it means that from your main living space you will feel connected to the outdoors. Whether a vibrant urban setting or a peaceful retreat, part of living in a CargocontainersTP is feeling connected to the place which you choose to live. The defining experience of living in a CargocontainersTP is feeling connected to the outdoors from your living space.</p><br>
+  <p style="font-size:20px">Minimalism - To us minimalism doesn’t mean living in an empty house with one chair, but it does mean living in an efficiently designed home without wasted space. A CargocontainersTP has rooms which are strategically sized, meant to create intimacy and warmth without feeling cramped, but not creating needless square footage. A CargocontainersTP is designed for you to live comfortably and efficiently wherever you choose to place it</p><br>
+  
+<br><br><br>
+<hr>
+<br><br><br>
+  <b><p style="font-size:20px">BEAUTIFUL:</b>-In a CargocontainersTP we made the conscious decision to build exceptionally durable homes which run exclusively on electricity.</p><br>
+  <p style="font-size:20px">Energy Efficiency - At CargocontainersTP we see a sustainable energy future which relies on renewable and clean electricity production to power our lives and our homes. Every CargocontainersTP is equipped with proven all electric systems which allows for renewable energy sources to offset some or all of the energy usage of a CargocontainersTP. </p><br>
+  <p style="font-size:20px">Durability - Every CargocontainersTP is built to stand the test of time. Steel Construction and Corten Steel Cladding means a CargocontainersTP will require less long term maintenance and out live a standard home. The durable nature of a CargocontainersTP means less waste from renovation and eventual demolition of homes.</p><br>
+<br><br><br>
+  </ul>
+  <hr>
+<br><br><br>
+<b><p style="font-size:20px">
+MODULAR:</b>-A modular home is built in a factory. A factory setting allows a CargocontainersTP to be built faster, higher quality, and with less waste than a standard home. </p><br>
+  <p style="font-size:20px">Faster - Without the delays related to weather and other unpredictable events, the speed of construction in a factory is faster and more efficient than you will find in construction outdoors.</p><br>
+  <p style="font-size:20px">Quality - Rigorous quality control in a controlled environment allows for a high quality construction process. Quality control checks are performed at every step of the way to maintain a predictable construction process.</p><br>
+  <p style="font-size:20px">Less Waste - Indoor construction and technologically advanced construction techniques make for a maximally efficient construction process with minimal waste.</p><br>
+<br><br><br>
+
+
+ <hr>
+ </div>
+</section>
+
+<section id="divtext" class="section-p1">
+   <h3 style=" text-align: center;">FAQ’S AND MORE INFORMATION</h3> 
+   <p style=" font-size:20px">If you did not find the answers you are looking for below, contact us and a local representative will be in touch shortly to help.</p><br>
+
+   <button class="accordion">Is the $2,500 reservation deposit refundable?</button>
+
+   <div id="text1"class="panel" >
+ <p>Yes, the reservation is refundable less a 10% fee..</p>
+ 
+ </div>
+<br>
+ <button class="accordion">Once i pay my deposit what's next?</button>
+
+ <div id="text1"class="panel" >
+
+<p> Once the reservation deposit is paid, a CargocontainersTP representative will be in touch to confirm shipping rates, logistics and to finalize your exterior color and upgrade selections. From there, a contract will be sent to you to complete the order and pay for the remainder of the unit and shipping.</p>
+</div>
+
+<br>
+<button class="accordion">Do i need building permit for Cargocontainer</button>
+
+<div id="text1"class="panel" >
+
+<p> The Cargocontainer is considered a movable structure and is under 100 sqft which generally is exempt from permit requirements.</p>
+</div>
+
+<br>
+<button class="accordion">Do i need a foundation?</button>
+
+<div id="text1"class="panel" >
+
+<p>The Cargocontainer can be set on a slab, foundation blocks or crushed gravel.</p>
+</div>
+
+<br>
+ <button class="accordion">How do i connect my Cargocontainer to power?</button>
+
+ <div id="text1"class="panel" >
+
+<p>The Cargocontainer comes with 3’ attached exterior cord for you to connect to an extension cord and plug into a dedicated 110v circuit on the exterior of your house.  If you choose the Heating/Cooling upgrade option you will need to have an electrician connect the Cargocontainer to a panel.</p>
+</div>
+
+<br>
+ <button class="accordion">How do I upload Cargocontainer?</button>
+
+ <div id="text1"class="panel" >
+
+<p> The Cargocontainer is delivered on a flatbed truck to your property. A forklift, zoom boom or crane can be used to unload your Cargocontainer. It will be sitting on 4x4 blocks. </p>
+</div>
+
+<br>
+ <button class="accordion">Can i have CargocontainersTP coordinate the logistica from the factory to my backyard?</button>
+
+ <div id="text1"class="panel" >
+
+<p> Yes! The cost for CargocontainersTP to coordinate is $1,000 and cost + 15%.</p>
+</div>
+
+<br>
+ <button class="accordion">What is the warranty?</button>
+
+ <div id="text1"class="panel" >
+
+<p>The Cargocontainer comes with a 1 year warranty.</p>
+</div>
+
+<br>
+ <button class="accordion">Can i customize the Cargocontainer?</button>
+
+ <div id="text1"class="panel" >
+
+<p> The styling and upgrades are fixed to create a streamlined and predictable process. Once it’s in your backyard, feel free to decorate it to your liking.</p>
+</div>
+
+<br>
+ <button class="accordion">What flooring is included?</button>
+
+ <div id="text1"class="panel" >
+
+<p>Luxury vinyl plank flooring - Light.</p>
+</div>
+
+<br>
+ <button class="accordion">How long does it take to get a CargocontainersTP?</button>
+
+ <div id="text1"class="panel" >
+
+<p> From design through to permits and completion it typically takes 10-12 months. Permits vary by jurisdiction and can be as quick as 1 month or as long as 6+ months. The quicker you begin the pre-construction phase the sooner you can have your home! It typically only takes us 10-12 weeks to actually build your home.</p>
+</div>
+
+</section>
+
+
+</div>
+
+ 
+  <img src="pic\yyy.jpg" width="100%" height="400" alt="CargocontainersTP" >
+
+
+
+<div style="width: 100%;
+  height: 150px;
+  text-align: center;">
+
+
+</div>
+
+<footer>
+<div style="width: 100%;
+  height: 220px;
+  text-align: center;
+  
+  background-color: #0C2340;">
+
+
+<br><br>
+
+
+<h5 style=" color:white; ">FOLLOW US</h5>
+
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+
+
+
+<h3 style=" color:white;">COPYRIGHT © CargocontainersTP 2024</h3>
+
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
